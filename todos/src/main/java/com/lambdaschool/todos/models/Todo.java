@@ -28,13 +28,11 @@ public class Todo extends Auditable
     }
 
     public Todo(
-        String description,
-        boolean completed,
-        User user)
+        long todoid,
+        String description)
     {
+        this.todoid = todoid;
         this.description = description;
-        this.completed = completed;
-        this.user = user;
     }
 
     public long getTodoid()
@@ -76,4 +74,5 @@ public class Todo extends Auditable
     {
         this.user = user;
     }
+
 }
