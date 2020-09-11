@@ -28,10 +28,10 @@ public class Todo extends Auditable
     }
 
     public Todo(
-        long todoid,
+        User user,
         String description)
     {
-        this.todoid = todoid;
+        this.user = user;
         this.description = description;
     }
 
